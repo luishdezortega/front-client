@@ -1,0 +1,6 @@
+<button [class]="type">
+  <span *ngIf="icon">
+    <img class="icon" [src]="'../../../assets/icons/' + icon + '.png'" />
+  </span>
+  {{ text }}
+</button>
