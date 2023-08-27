@@ -1,0 +1,23 @@
+<form (submit)="saveClient()" [formGroup]="profileForm">
+  <label for="name">Name: </label>
+  <input id="name" type="text" formControlName="name" />
+
+  <label for="phone">Phone: </label>
+  <input id="phone" type="text" formControlName="phone" />
+
+  <label for="mail">E-Mail:</label><br />
+  <input id="email" type="email" formControlName="email" /><br />
+
+  <label for="starDate">Start date:</label><br />
+  <input id="statDate" type="date" formControlName="startDate" /> <br />
+
+  <label for="endDate">End date:</label><br />
+  <input id="endDate" type="date" formControlName="endDate" /> <br />
+
+  <button [disabled]="profileForm.invalid">OK</button>
+</form>
+
+
+<ul>
+  <li *ngFor="let client of clientList">{{client.name}}</li>
+</ul>
