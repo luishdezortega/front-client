@@ -6,25 +6,27 @@
     <div class="divform">
       <div>
         <label for="name">Name: </label><br />
-        <input id="name" type="text" formControlName="name" /><br />
+        <input class="label" id="name" type="text" formControlName="name" /><br />
       </div>
 
       <div>
         <label for="phone">Phone: </label><br />
-        <input id="phone" type="text" formControlName="phone" /><br />
+        <input class="label" id="phone" type="text" formControlName="phone" /><br />
       </div>
 
       <div>
         <label for="mail">E-Mail:</label><br />
-        <input id="email" type="email" formControlName="email" /><br />
+        <input class="label" id="email" type="email" formControlName="email" /><br />
       </div>
       <div>
         <label for="starDate">Start date:</label><br />
-        <input id="statDate" type="date" formControlName="startDate" /> <br />
+        <input class="label" id="statDate" type="date" formControlName="startDate" />
+        <br />
       </div>
       <div>
         <label for="endDate">End date:</label><br />
-        <input id="endDate" type="date" formControlName="endDate" /> <br />
+        <input class="label" id="endDate" type="date" formControlName="endDate" />
+        <br />
       </div>
       <div class="divButton">
         <button [disabled]="profileForm.invalid" class="button-ok">OK</button>

@@ -5,27 +5,34 @@
 }
 .divform {
   margin: 0 auto;
+  .label {
+width: 100%;
+  }
 }
-.divButton{
-  display: flex;
-  .button-ok{
+.divButton {
+  float: right;
+  margin: 5px auto;
+  .button-ok {
     width: 50px;
     background-color: #0088cc;
     border-radius: 5px;
-    margin: 0 auto;
-      margin-top: 20px;
+    margin: 5px;
   }
 }
-.modal{
-    margin: 0 auto;
-    max-width: 400px;
-    border: solid;
-    border-radius: 5px;
-    border-color: gray;
+.modal {
+  margin: 0 auto;
+  max-width: 400px;
+  border: solid;
+  border-radius: 5px;
+  border-color: gray;
+  background-color: #AED6F1;
+
 }
-.title{
-  max-width: fit-content;
-  padding: 10px;
+.title {
+  padding: 5px;
+  border-bottom: 1px solid gray;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .form-field {
