@@ -1,23 +1,38 @@
-<form (submit)="saveClient()" [formGroup]="profileForm">
-  <label for="name">Name: </label>
-  <input id="name" type="text" formControlName="name" />
+<div class="modal">
+  <div class="title">
+    <label>Create New Client</label>
+  </div>
+  <form (submit)="saveClient()" [formGroup]="profileForm" class="form">
+    <div class="divform">
+      <div>
+        <label for="name">Name: </label><br />
+        <input id="name" type="text" formControlName="name" /><br />
+      </div>
 
-  <label for="phone">Phone: </label>
-  <input id="phone" type="text" formControlName="phone" />
+      <div>
+        <label for="phone">Phone: </label><br />
+        <input id="phone" type="text" formControlName="phone" /><br />
+      </div>
 
-  <label for="mail">E-Mail:</label><br />
-  <input id="email" type="email" formControlName="email" /><br />
-
-  <label for="starDate">Start date:</label><br />
-  <input id="statDate" type="date" formControlName="startDate" /> <br />
-
-  <label for="endDate">End date:</label><br />
-  <input id="endDate" type="date" formControlName="endDate" /> <br />
-
-  <button [disabled]="profileForm.invalid">OK</button>
-</form>
-
+      <div>
+        <label for="mail">E-Mail:</label><br />
+        <input id="email" type="email" formControlName="email" /><br />
+      </div>
+      <div>
+        <label for="starDate">Start date:</label><br />
+        <input id="statDate" type="date" formControlName="startDate" /> <br />
+      </div>
+      <div>
+        <label for="endDate">End date:</label><br />
+        <input id="endDate" type="date" formControlName="endDate" /> <br />
+      </div>
+      <div class="divButton">
+        <button [disabled]="profileForm.invalid" class="button-ok">OK</button>
+      </div>
+    </div>
+  </form>
+</div>
 
 <ul>
-  <li *ngFor="let client of clientList">{{client.name}}</li>
+  <li *ngFor="let client of clientList">{{ client.name }}</li>
 </ul>

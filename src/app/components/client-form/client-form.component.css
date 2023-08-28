@@ -1,18 +1,38 @@
 .form {
-    max-width: 400px;
+  padding: 5px;
+  display: flex;
+  border-radius: 15px;
+}
+.divform {
+  margin: 0 auto;
+}
+.divButton{
+  display: flex;
+  .button-ok{
+    width: 50px;
+    background-color: #0088cc;
+    border-radius: 5px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
   }
-  
-  .form-field {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  button {
-    width: 100%;
-  }
-  
+}
+.modal{
+    margin: 0 auto;
+    max-width: 400px;
+    border: solid;
+    border-radius: 5px;
+    border-color: gray;
+}
+.title{
+  max-width: fit-content;
+  padding: 10px;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+}
