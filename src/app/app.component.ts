@@ -21,16 +21,12 @@ export class AppComponent {
     const blob = new Blob([data], {
       type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;',
     });
-    const url = window.URL.createObjectURL(blob);
 
-    var link = document.createElement('a');
+    let link = document.createElement('a');
     link.href = window.URL.createObjectURL(blob);
     link.download = 'CLient-List.xlsx';
-
     document.body.appendChild(link);
-
     link.click();
-
     document.body.removeChild(link);
   }
 }
