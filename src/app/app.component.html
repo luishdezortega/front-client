@@ -1,10 +1,18 @@
-<app-button icon="IconPlus" text="New"></app-button>
-
-<app-button icon="IconPerson" text="Create"></app-button>
-
 <div>
-  <input type="text" /><app-button text="Search" type="secondary"></app-button>
-</div>
-<div class="formStyle">
-<app-client-form></app-client-form>
+  <div class="button-view">
+    <app-button icon="IconPlus" text="New" ></app-button>
+    <app-button icon="IconExport" text="Export" (click)="exportToExcel()"></app-button>
+  </div>
+  <div>
+    <input type="text" /><app-button text="Search" type="secondary"></app-button>
+  </div>
+
+  <app-client-list>
+    
+  </app-client-list>
+
+
+  <div class="formStyle">
+    <app-client-form></app-client-form>
+  </div>
 </div>

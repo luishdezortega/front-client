@@ -1,9 +1,13 @@
 .primary {
   background-color: #0088cc;
+  margin-right: 20px;
 }
 .secondary {
   background-color: white;
 }
 .icon {
   width: 20px;
+}
+.btn {
+  cursor: pointer;
 }

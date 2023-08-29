@@ -7,9 +7,10 @@ import { ButtonComponent } from './components/button/button.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ClientFormComponent } from './components/client-form/client-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ClientListComponent } from './components/client-list/client-list.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonComponent, ClientFormComponent],
+  declarations: [AppComponent, ButtonComponent, ClientFormComponent, ClientListComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
